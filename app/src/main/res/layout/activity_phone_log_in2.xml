@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_1"
+        tools:context=".PhoneLogInActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4A000000"
+                tools:layout_editor_absoluteX="-28dp"
+                tools:layout_editor_absoluteY="57dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="180dp"
+                android:layout_height="137dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/PhoneNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/background"
+                android:drawableLeft="@drawable/baseline_phone_iphone_24"
+                android:drawablePadding="6dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="#BAFFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/BtnSendOtp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background"
+                android:fontFamily="sans-serif"
+                android:text="SEND"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/PhoneNo"
+                app:layout_constraintStart_toStartOf="@+id/PhoneNo"
+                app:layout_constraintTop_toBottomOf="@+id/PhoneNo" />
+
+            <EditText
+                android:id="@+id/OTP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/background"
+                android:drawableLeft="@drawable/baseline_otp_24"
+                android:drawablePadding="6dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="OTP"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="#BAFFFFFF"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/BtnSendOtp"
+                app:layout_constraintStart_toStartOf="@+id/BtnSendOtp"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/BtnVerifyOtp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="VERIFY"
+                android:background="@drawable/background"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:visibility="invisible"
+                android:enabled="false"
+                app:layout_constraintEnd_toEndOf="@+id/OTP"
+                app:layout_constraintStart_toStartOf="@+id/OTP"
+                app:layout_constraintTop_toBottomOf="@+id/OTP" />
+
+            <ProgressBar
+                android:id="@+id/Bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BtnVerifyOtp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/BtnVerifyOtp"
+                app:layout_constraintStart_toStartOf="@+id/BtnVerifyOtp"
+                app:layout_constraintTop_toBottomOf="@+id/BtnVerifyOtp"
+                android:visibility="invisible"
+                android:progressTint="@color/white"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

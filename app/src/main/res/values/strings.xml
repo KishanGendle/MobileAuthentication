@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MobileAuthentication</string>
+
+    <string name="facebook_app_id">1280088709548419</string>
+
+    <string name="fb_login_protocol_scheme">fb1280088709548419</string>
+
+    <string name="facebook_client_token">56789</string>
+    <string name="github_login">GITHUB LOGIN</string>
+    <string name="welcome">WELCOME</string>
+    <string name="logout">LOGOUT</string>
+</resources>
